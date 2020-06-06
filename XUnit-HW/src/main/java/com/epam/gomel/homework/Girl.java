@@ -18,7 +18,10 @@ public class Girl extends Human {
     this.isPretty = isPretty;
     this.isSlimFriendGotAFewKilos = isSlimFriendGotAFewKilos;
     this.boyFriend = boyFriend;
-    this.boyFriend.setGirlFriend(this);
+// was error
+    if (this.boyFriend != null) {
+      this.boyFriend.setGirlFriend(this);
+    }
   }
 
   public Girl(boolean isPretty, boolean isSlimFriendGotAFewKilos) {
@@ -50,9 +53,9 @@ public class Girl extends Human {
       getBoyFriend().spendSomeMoney(amountForSpending);
     }
   }
-
+//bug insted != was ==
   public boolean isBoyfriendRich() {
-    return getBoyFriend() == null && getBoyFriend().isRich();
+    return getBoyFriend() != null && getBoyFriend().isRich();
   }
 
   public boolean isBoyFriendWillBuyNewShoes() {
