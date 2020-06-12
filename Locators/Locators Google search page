@@ -1,0 +1,5 @@
+1. //input[@title = 'Поиск']
+2. //input[@value = 'Поиск в Google']
+3. //input[@value = 'Мне повезет!']
+4.
+5. //div[@id = 'foot']

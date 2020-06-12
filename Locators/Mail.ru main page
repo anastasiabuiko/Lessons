@@ -1,0 +1,5 @@
+1. //input [@id = 'mailbox:login']
+2. //select [@id = 'mailbox:domain']
+3. //input [@value = 'Ввести пароль']
+4. //input [@id = 'mailbox:password']
+5. //input [@value = 'Ввести пароль']
