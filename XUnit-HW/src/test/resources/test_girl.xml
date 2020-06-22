@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Girl">
+    <test name="TestForGirl">
+        <groups>
+            <run>
+                <include name="girl" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.epam.gomel.homework.GirlTest"/>
+            <class name="com.epam.gomel.homework.ExtendFactory"/>
+        </classes>
+
+    </test>
+</suite>
