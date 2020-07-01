@@ -15,21 +15,24 @@ public class UserFactory {
         return new User()
                 .withName("anastaisa.buiko19994")
                 .withPassword("WorldofWarplanes1")
-                .withAddress("anastaisa.buiko19994@mail.ru");
+                .withAddress("anastaisa.buiko19994@mail.ru")
+                .withTheme("test")
+                .withText("text");
     }
 
-    public static User getErrorLetter(){
-        return new User()
-                .withName("anastaisa.buiko19994")
-                .withPassword("WorldofWarplanes1")
-                .withAddress("");
-    }
-
-    public  static User getErrorLetterTwo(){
+    public static User getWhithoutBody(){
         return new User()
                 .withName("anastaisa.buiko19994")
                 .withPassword("WorldofWarplanes1")
                 .withAddress("anastaisa.buiko19994@mail.ru")
+                .withTheme("");
+    }
+
+    public  static User getErrorLetter(){
+        return new User()
+                .withName("anastaisa.buiko19994")
+                .withPassword("WorldofWarplanes1")
+                .withAddress("")
                 .withTheme("")
                 .withText("");
     }
@@ -37,7 +40,9 @@ public class UserFactory {
         return new User()
                 .withName("anastaisa.buiko19994")
                 .withPassword("WorldofWarplanes1")
-                .withAddress("anastaisa.buiko19994@mail.ru");
+                .withAddress("anastaisa.buiko19994@mail.ru")
+                .withTheme("tema")
+                .withText("text text");
     }
 
 }

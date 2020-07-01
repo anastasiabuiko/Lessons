@@ -13,7 +13,11 @@ public class SendLetterPage extends  BasePage {
 
     private static final String Themed = "//*[@id=\"app-canvas\"]/div/div[1]/div[1]/div/div[2]/div[2]/div/div/div/div/div/div[1]/div/div/div/a[1]/div[4]/div/div[1]/span";
 
+
     private static final String Empty = "//*[@id=\"app-canvas\"]/div/div[1]/div[1]/div/div[2]/div[2]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/span/span";
+
+
+
     @FindBy(className = "compose-button__wrapper")
     private WebElement sendLetter;
     @FindBy(xpath = "/html/body/div[15]/div[2]/div/div[1]/div[2]/div[3]/div[2]/div/div/div[1]/div/div[2]/div/div/label/div/div/input")
@@ -30,14 +34,18 @@ public class SendLetterPage extends  BasePage {
     private WebElement crest;
     @FindBy(xpath = "/html/body/div[15]/div[2]/div/div[2]/div[1]/span[2]/span")
     private WebElement buttonSave;
-    @FindBy(xpath = "/html/body/div[15]/div[2]/div/div[1]/div[2]/div[2]/div/div/button[2]/div/div/svg")
+    @FindBy(xpath = "/html/body/div[15]/div[2]/div/div[1]/div[2]/div[2]/div/div/button[2]")
     private WebElement exit;
     @FindBy(xpath = "//*[@id=\"app-canvas\"]/div/div[1]/div[1]/div/div[2]/div[1]/div/div/div/div[2]/div/div[1]/nav/a[5]/div/div[1]")
     private WebElement draft;
-    @FindBy(xpath = "//*[@id=\"app-canvas\"]/div/div[1]/div[1]/div/div[2]/div[2]/div/div/div/div/div/div[1]/div/div/div/a[1]/div[3]/button/div/span[1]/div/div/label/span/div")
+    @FindBy(xpath = "//*[@id=\"app-canvas\"]/div/div[1]/div[1]/div/div[2]/div[2]/div/div/div/div/div/div[1]/div/div/div/a[1]/div[3]/button/div/span[2]")
     private WebElement check;
-    @FindBy (xpath = "м//*[@id=\"app-canvas\"]/div/div[1]/div[1]/div/div[1]/div[2]/div[2]/table/tbody/tr/td/span[2]/div[1]/span/span/span/svg")
+    @FindBy (xpath = "//*[@id=\"app-canvas\"]/div/div[1]/div[1]/div/div[1]/div[2]/div[2]/table/tbody/tr/td/span[2]/div[1]/span/span")
     private WebElement delete;
+    @FindBy(xpath = "/html/body/div[15]/div[2]/div/div[2]/div[1]/span[2]/span")
+    private WebElement SaveButton;
+    @FindBy(xpath = "/html/body/div[16]/div/div/div[2]/button[1]")
+    private WebElement sendbutton;
 
 
     public SendLetterPage sendLetter() {
@@ -54,7 +62,9 @@ public class SendLetterPage extends  BasePage {
 
     public SendLetterPage withTheme(String theme) {
         defaultWait.until(ExpectedConditions.elementToBeClickable(this.theme));
-        this.theme.sendKeys(theme);
+        if (theme!=null) {
+            this.theme.sendKeys(theme);
+        }
         return this;
     }
 
@@ -66,7 +76,9 @@ public class SendLetterPage extends  BasePage {
 
     public SendLetterPage withText(String text) {
         defaultWait.until(ExpectedConditions.elementToBeClickable(this.text));
-        this.text.sendKeys(text);
+        if(text!=null) {
+            this.text.sendKeys(text);
+        }
         return this;
     }
 
@@ -78,7 +90,7 @@ public class SendLetterPage extends  BasePage {
 
     public String Inbox() {
         defaultWait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.className(Inbox))));
-        return driver.findElement(By.className(Inbox())).getText();
+        return driver.findElement(By.className(Inbox)).getText();
     }
 
     public String Error() {
@@ -111,13 +123,9 @@ public class SendLetterPage extends  BasePage {
         return driver.findElement(By.xpath(Themed)).getText();
     }
 
-    public void exit() {
-        defaultWait.until(ExpectedConditions.elementToBeClickable(exit));
-        exit.click();
-    }
 
     public void draft() {
-        defaultWait.until(ExpectedConditions.elementToBeClickable(exit));
+        defaultWait.until(ExpectedConditions.elementToBeClickable(draft));
         draft.click();
     }
 
@@ -129,9 +137,22 @@ public class SendLetterPage extends  BasePage {
         defaultWait.until(ExpectedConditions.elementToBeClickable(delete));
         delete.click();
     }
-
+    public void exit() {
+        defaultWait.until(ExpectedConditions.elementToBeClickable(exit));
+        exit.click();
+    }
     public String Empty() {
         defaultWait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath(Empty))));
         return driver.findElement(By.xpath(Empty)).getText();
+    }
+
+    public void SaveButton() {
+        defaultWait.until(ExpectedConditions.elementToBeClickable(SaveButton));
+        SaveButton.click();
+    }
+
+    public void Sendbutton(){
+        defaultWait.until(ExpectedConditions.elementToBeClickable(sendbutton));
+        sendbutton.click();
     }
 }

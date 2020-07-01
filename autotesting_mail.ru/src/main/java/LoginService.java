@@ -14,34 +14,36 @@ public class LoginService {
          LoginPage(user);
          Thread.sleep(5000);
          SendLetterPage sendLetterPage= new SendLetterPage();
-        Thread.sleep(5000);
+         Thread.sleep(5000);
          sendLetterPage.sendLetter();
          Thread.sleep(5000);
          sendLetterPage.withAddress(user.getAddress());
-        Thread.sleep(5000);
-         sendLetterPage.withTheme("test");
-         sendLetterPage.withText("message me me");
-         sendLetterPage.sendMessage();
+         Thread.sleep(5000);
+         sendLetterPage.withTheme(user.getTheme());
+         sendLetterPage.withText(user.getText());
     }
 
-    public static void SendLetterPageTwo(User user) throws InterruptedException{
-        LoginPage(user);
-        Thread.sleep(5000);
-        SendLetterPage sendLetterPage= new SendLetterPage();
-        Thread.sleep(5000);
-        sendLetterPage.sendLetter();
-        Thread.sleep(5000);
-        sendLetterPage.withAddress(user.getAddress());
-        Thread.sleep(5000);
-        sendLetterPage.withTheme("test");
-        sendLetterPage.withText("message me me");
-        sendLetterPage.buttonSave();
-        Thread.sleep(9000);
-        sendLetterPage.exit();
-        Thread.sleep(5000);
-        sendLetterPage.draft();
-        Thread.sleep(5000);
-        sendLetterPage.check();
-        sendLetterPage.delete();
+    public static void SendMessage(){
+        new SendLetterPage().sendMessage();
     }
+
+    public static void SendButton(){
+        new SendLetterPage().Sendbutton();
+    }
+
+    public static void SaveButton()  throws InterruptedException{
+        Thread.sleep(5000);
+        new SendLetterPage().SaveButton();
+    }
+
+    public static void Draft()throws InterruptedException{
+        Thread.sleep(5000);
+        new SendLetterPage().exit();
+        new SendLetterPage().draft();
+        Thread.sleep(5000);
+        new SendLetterPage().check();
+        new SendLetterPage().delete();
+        Thread.sleep(5000);
+    }
+
 }

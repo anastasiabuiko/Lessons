@@ -20,6 +20,12 @@ public class User {
     public String getAddress(){
         return this.address;
     }
+    public String getTheme(){
+        return this.theme;
+    }
+    public String getText(){
+        return this.text;
+    }
 
     public User withName(String name) {
         this.name = name;
