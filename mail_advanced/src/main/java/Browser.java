@@ -15,7 +15,7 @@ public class Browser {
 
     private Browser() {
         System.setProperty("webdriver.chrome.driver",
-                "/home/n/Lessons/mail_advanced/src/test/java/resources/chromedriver");
+                "/home/slon/Lessons/mail_advanced/src/test/java/resources/chromedriver");
         driver = new ChromeDriver();
     }
     public void switchToTab(String nameOfTab) {

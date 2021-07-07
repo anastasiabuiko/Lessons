@@ -14,7 +14,7 @@ public class WrappedDriver {
     public static WebDriver getInstanse(){
         if (driver == null) {
             System.setProperty("webdriver.chrome.driver",
-                    "/home/n/Lessons/mail_advanced/src/test/java/resources/chromedriver");
+                    "/home/slon/Lessons/mail_advanced/src/test/java/resources/chromedriver");
             return driver = new ChromeDriver();
         } else {
             return driver;

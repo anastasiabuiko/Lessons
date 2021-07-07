@@ -1,7 +1,11 @@
 public class LoginService {
+
+
     public static void LoginPage(User user) throws InterruptedException {
         LoginPage page = new LoginPage();
         page.load();
+        page.clickLogin();
+        page.switchToFrame();
         page.checkbox();
         page.UserName(user.getName())
                 .clickLoginButton();

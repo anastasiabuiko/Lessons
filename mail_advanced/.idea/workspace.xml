@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae6d7824-db46-479a-a610-dae7dd856897" name="Default Changelist" comment="" />
+    <list default="true" id="ae6d7824-db46-479a-a610-dae7dd856897" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Browser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WrappedDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WrappedDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/chromedriver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Browser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Browser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/TestRun.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/TestRun.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WrappedDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WrappedDriver.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,12 +27,52 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunManager" selected="JUnit.TestRun.testLogin">
+    <configuration name="TestRun" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autotesting_mail.ru" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRun" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRun.testCreateFolder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autotesting_mail.ru" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRun" />
+      <option name="METHOD_NAME" value="testCreateFolder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRun.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="autotesting_mail.ru" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestRun" />
+      <option name="METHOD_NAME" value="testLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestRun.testLogin" />
+        <item itemvalue="JUnit.TestRun" />
+        <item itemvalue="JUnit.TestRun.testCreateFolder" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -31,13 +84,62 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595180154931</updated>
+      <workItem from="1624113311812" duration="1744000" />
+      <workItem from="1624115882004" duration="1793000" />
+      <workItem from="1624117708084" duration="1793000" />
+      <workItem from="1624120255660" duration="1422000" />
+      <workItem from="1624122528104" duration="1787000" />
+      <workItem from="1624124858208" duration="1283000" />
+      <workItem from="1624200770069" duration="843000" />
+      <workItem from="1624217811318" duration="1791000" />
+      <workItem from="1624219636004" duration="1884000" />
+      <workItem from="1624221549652" duration="108000" />
+      <workItem from="1624474824990" duration="1787000" />
+      <workItem from="1624476741866" duration="1791000" />
+      <workItem from="1624478553638" duration="556000" />
+      <workItem from="1624905630444" duration="629000" />
+      <workItem from="1624907505200" duration="1789000" />
+      <workItem from="1624909319092" duration="1844000" />
+      <workItem from="1624911183474" duration="1796000" />
+      <workItem from="1624913057053" duration="1567000" />
+      <workItem from="1624967528084" duration="50000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="466" y="121" width="424" height="479" key="FileChooserDialogImpl" timestamp="1595180229654">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="686" y="330" width="543" height="387" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1624478991343">
+      <screen x="0" y="0" width="1920" height="1047" />
     </state>
-    <state x="466" y="121" width="424" height="479" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595180229654" />
+    <state x="686" y="330" width="543" height="387" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1047@0.0.1920.1047" timestamp="1624478991343" />
+    <state width="1878" height="297" key="GridCell.Tab.0.bottom" timestamp="1624967577178">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1047@0.0.1920.1047" timestamp="1624967577178" />
+    <state width="1878" height="297" key="GridCell.Tab.0.center" timestamp="1624967577178">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="297" key="GridCell.Tab.0.center/0.0.1920.1047@0.0.1920.1047" timestamp="1624967577178" />
+    <state width="1878" height="297" key="GridCell.Tab.0.left" timestamp="1624967577178">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="297" key="GridCell.Tab.0.left/0.0.1920.1047@0.0.1920.1047" timestamp="1624967577178" />
+    <state width="1878" height="297" key="GridCell.Tab.0.right" timestamp="1624967577178">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="297" key="GridCell.Tab.0.right/0.0.1920.1047@0.0.1920.1047" timestamp="1624967577178" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/TestRun.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
